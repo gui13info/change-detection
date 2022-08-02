@@ -1,0 +1,19 @@
+<div class="container">
+    <mat-card>
+        <mat-card-title>OnPush</mat-card-title>
+        <mat-card-content>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Novo valor</mat-label>
+                <input matInput placeholder="Ex. Teste" #input />
+            </mat-form-field>
+            <p>
+                {{ value }}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="newValue(input.value)">Alterar valor</button>
+        </mat-card-actions>
+    </mat-card>
+    
+    <app-onpush-chield></app-onpush-chield>
+</div>
